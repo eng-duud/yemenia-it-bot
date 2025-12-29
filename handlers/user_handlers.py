@@ -45,7 +45,7 @@ async def check_subscription(update: Update, context: ContextTypes.DEFAULT_TYPE)
 async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     is_admin = (user_id == config.ADMIN_ID)
-    text = "👋 أهلاً بك في بوت دليل الطالب الجامعي.\n\nيرجى اختيار ما تريد من الأزرار أدناه:"
+    text = "👋 أهلاً بك في بوت دليل الطالب الجامعي.\n\nيرجى اختيار ما تريد من الأزرار أدناه:   تواصل مع المطور @ِAmmory_yam"
     reply_markup = get_main_keyboard(is_admin)
     
     if update.callback_query:
